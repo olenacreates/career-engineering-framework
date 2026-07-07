@@ -7,6 +7,4 @@ This section contains the foundational product discovery documents.
 - Founder Notes
 - Vision
 - Problem Statement
-- Target Users
-- User Journey
-- Roadmap
+- Project Principles
