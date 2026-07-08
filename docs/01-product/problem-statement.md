@@ -1,49 +1,55 @@
+Status: Draft
+
+Owner: Olena Lendiel
+
+Last Updated: 2026-07-08
+
+---
+
 # Problem Statement
 
-## The Problem
+## Why this document exists
 
-Professionals with several years of experience often reach a point where they know they want a career change but struggle to identify the right direction.
+A clear understanding of the problem is the foundation of every engineering solution.
 
-The problem is rarely a lack of skills.
+This document defines the core problem Career Engineering Framework is designed to solve and serves as a reference point for future product decisions.
 
-Instead, valuable experience remains scattered across projects, responsibilities, achievements, performance reviews, presentations, interview preparation, and personal memories.
+## Problem
 
-Because this knowledge is fragmented, professionals struggle to:
+Professionals continuously accumulate valuable experience throughout their careers.
 
-- understand their transferable capabilities;
-- identify suitable career paths;
-- communicate their value consistently;
-- tailor applications efficiently.
+However, this experience is rarely stored in a structured, reusable format. Instead, it becomes scattered across CVs, performance reviews, project documentation, certificates, presentations, interview preparation notes, and personal memories.
 
-As a result, career transitions become slow, emotionally draining, and largely driven by trial and error.
+As a result, professionals repeatedly reconstruct the same information whenever they prepare a CV, apply for a job, prepare for interviews, update LinkedIn, or evaluate their next career step.
 
----
+The effort is repetitive, time-consuming, and often leads to valuable experience being forgotten or underrepresented.
 
-## Existing Solutions
+## Why existing solutions fall short
 
-Most career tools focus on:
+Most career tools focus on generating outputs such as CVs, cover letters, or LinkedIn profiles.
 
-- CV generation
-- Cover letters
-- AI interview preparation
-- Job matching
+These outputs are treated as independent documents rather than different representations of the same underlying professional knowledge.
 
-These solve the final stage of a job search.
+As a consequence:
 
-Very few help people understand and structure their professional experience before they begin applying.
-
----
+- professional information becomes duplicated across multiple documents;
+- updates need to be repeated manually;
+- career decisions are made without a complete view of existing experience;
+- valuable achievements and stories are gradually lost over time.
 
 ## Opportunity
 
-Large Language Models are exceptionally good at recognizing patterns in unstructured information.
+Career Engineering Framework approaches the problem differently.
 
-Instead of asking users to manually create career documents, an LLM can transform a guided brain dump into reusable career assets.
+Instead of generating isolated career documents, the framework first transforms fragmented professional experience into structured knowledge.
 
-This shifts career development from document writing to knowledge engineering.
+Career artifacts such as Master CVs, positioning statements, and future career analytics are then generated from the same reusable knowledge base.
 
----
+## Success Criteria
 
-## Vision
+A successful solution enables professionals to:
 
-Career Engineering Framework applies engineering principles to career development by transforming unstructured professional experience into structured, reusable career assets that support career discovery, positioning, and job search.
+- capture their professional experience only once;
+- continuously enrich their professional knowledge over time;
+- reuse the same knowledge across multiple career activities;
+- make better informed career decisions based on structured evidence.

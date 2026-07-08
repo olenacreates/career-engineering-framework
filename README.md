@@ -1,49 +1,26 @@
 # Career Engineering Framework
 
-**Applying engineering principles to career development.**
+> Helping professionals transform fragmented career experience into structured knowledge, intentional positioning, and informed career decisions.
 
-Career Engineering Framework explores how AI and structured thinking can help professionals understand their experience, discover new career opportunities, and build reusable career assets.
+## Overview
 
-Instead of starting every job application from scratch, the framework transforms unstructured professional knowledge into structured assets such as:
+Career Engineering Framework is an open framework for applying systems thinking and engineering principles to career development.
 
-- Master CV
-- Skills Library
-- Achievement Library
-- Hero Stories
-- Career Positioning Map
-- Competency Matrix
+Instead of treating CVs, cover letters, interview preparation and career planning as separate activities, the framework helps professionals build a reusable professional knowledge base that evolves throughout a person's career.
 
----
+The first MVP focuses on transforming an unstructured Career Brain Dump into structured professional knowledge that becomes the foundation for career positioning, analytics, and future career artifacts such as a Master CV.
 
-## Why
+## Vision
 
-Career transitions are often difficult not because people lack experience, but because they struggle to organize and communicate it.
+Professionals don't lack experience.
 
-This project investigates whether AI can support that process by combining guided reflection, structured prompts, and reusable templates.
+They lack a structured way to understand, organize and reuse it.
 
----
+Career Engineering Framework transforms fragmented professional experience into structured knowledge that helps people make intentional career decisions throughout their careers.
 
 ## Current Status
 
-🚧 MVP in development.
+🚧 Sprint 1 preparation
 
 Current focus:
-
-- Product discovery
-- Architecture
-- Prompt engineering
-- Initial implementation
-
----
-
-## Repository Structure
-
-/docs
-/src
-/tests
-
----
-
-## Long-term Vision
-
-Career Engineering Framework aims to become an AI-powered toolkit that helps professionals transform years of experience into actionable career assets and make better-informed career decisions.
+Building the first MVP — Career Knowledge Extraction Engine.
