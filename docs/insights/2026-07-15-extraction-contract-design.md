@@ -57,6 +57,24 @@ Anthropic API. Observed:
 - **Employment/work history was dropped** — "backend developer for 5 years" had no
   home in the schema. Evidence from a real extraction, not yet a decision.
 
+### Increment 2 — first runnable MVP (pipeline + entry point)
+
+- **End-to-end application runs:** `python src/main.py` reads
+  `input/brain_dump.docx`, produces `output/career_profile.json`, and reports
+  success — the Sprint Goal (Brain Dump → Career Profile JSON) is met by a
+  runnable app, not just a library call.
+- **Error path is clean:** a missing input yields a legible message and exit
+  code 1 (the pipeline raises; the entry point presents).
+- **`source_document` provenance validated in the running app** — set by the
+  pipeline to the filename only (`brain_dump.docx`), confirming the code-owns-
+  provenance boundary in practice.
+- **Schema gap reproduced (2nd data point):** on a richer dump, employment
+  history / tenure was dropped again — reinforcing the Open Question evidence.
+- **Ops observation (reusable):** a declared dependency (`python-docx`) was not
+  installed in the active interpreter; the earlier tests passed only because they
+  didn't exercise the DOCX loader. Verify declared deps are actually importable in
+  the target interpreter before claiming a flow is "runnable."
+
 ## Why it matters
 
 - The evidence-only MVP policy is now **validated in practice**: the extractor
