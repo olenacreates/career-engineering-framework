@@ -9,6 +9,11 @@ dependencies = [
     "python-dotenv",
 ]
 
+# Presentation-only extras. The core extraction framework stays independent of
+# any UI technology; install the demo UI with:  pip install -e ".[ui]"
+[project.optional-dependencies]
+ui = ["streamlit"]
+
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
