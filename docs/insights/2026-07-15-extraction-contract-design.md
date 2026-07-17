@@ -110,6 +110,29 @@ Product Owner decision.
 
 **When resolved:** promote to an ADR (likely a clarification/amendment of ADR-001).
 
+### Open Architectural Question — Should `pipeline.run()` return a `CareerProfile` instead of producing files?
+
+**Question.** Should `pipeline.run()` eventually return a `CareerProfile` domain
+object rather than writing JSON to a file path directly?
+
+**Why open.** We now have multiple entry points (CLI `main.py`, the Streamlit demo
+UI, a possible future REST API). Returning the domain object may become a cleaner
+long-term abstraction — each entry point could then own persistence/presentation,
+and the pipeline would own only the transformation. Today we intentionally keep the
+existing file-producing contract to avoid destabilizing the freshly completed MVP.
+
+**Decision.** Postponed. Do not change the pipeline now.
+
+**Resolution trigger (per our workflow: every deferred decision carries one).**
+Revisit when file round-tripping becomes real friction across entry points — e.g.
+an entry point that writes a temp file only to immediately read it back. First data
+point already observed: the Streamlit UI writes a temp `.docx` and a temp JSON,
+then reads the JSON back purely to display it. If a second entry point (e.g. a REST
+API) needs the profile in memory and also round-trips through disk, that is the
+signal to make `run()` return the `CareerProfile` and let entry points own I/O.
+
+**When resolved:** promote to an ADR (a pipeline-contract decision).
+
 ### Temporary MVP implementation decision (validated this increment)
 
 For Sprint 1 only: extract only what the Brain Dump explicitly supports; never
