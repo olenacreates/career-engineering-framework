@@ -24,3 +24,27 @@ Career Engineering Framework transforms fragmented professional experience into 
 
 Current focus:
 Building the first MVP — Career Knowledge Extraction Engine.
+
+## Local setup
+
+1. Copy the example environment file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Open `.env` and set your Anthropic API key:
+
+   ```
+   ANTHROPIC_API_KEY=sk-ant-...
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   pip install -e .
+   ```
+
+> **Never commit `.env`.** It holds your secret API key and is already
+> listed in `.gitignore`. Only `.env.example` (with placeholder values)
+> belongs in version control.

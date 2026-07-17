@@ -1,0 +1,22 @@
+[project]
+name = "career-engineering-framework"
+version = "0.1.0"
+description = "Career Knowledge Extraction Engine (MVP)"
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic",
+    "python-docx",
+    "python-dotenv",
+]
+
+# Presentation-only extras. The core extraction framework stays independent of
+# any UI technology; install the demo UI with:  pip install -e ".[ui]"
+[project.optional-dependencies]
+ui = ["streamlit"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
