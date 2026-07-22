@@ -20,10 +20,14 @@ Career Engineering Framework transforms fragmented professional experience into 
 
 ## Current Status
 
-🚧 Sprint 1 preparation
+🚧 Sprint 1 copleted.
 
 Current focus:
-Building the first MVP — Career Knowledge Extraction Engine.
+Built the first MVP — Career Knowledge Extraction Engine.
+
+## Live Demo
+
+🌐 https://career-engineering-framework-master-cv-mvp.streamlit.app/
 
 ## Local setup
 
